@@ -1,0 +1,9 @@
+<!-- <input id="preview" type="file" (change)="previewFile($event)" /> -->
+
+<div *ngIf="barChartData">
+  <div style="display: block">
+    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+      [legend]="barChartLegend" [chartType]="barChartType">
+    </canvas>
+  </div>
+</div>
